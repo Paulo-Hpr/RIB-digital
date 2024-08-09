@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./style/style_forms.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RIB-DIGITAL</title>
+</head>
+
+<body>
+  <div class="body-forms" >
+    
+    <div class="bodyHome">
+      <div class="box-home">
+        <h1 class="title-home">
+          Sistema de Registro de Ocorrências com Bagagem
+        </h1>
+        <div class="text-home">
+          <p>
+            Seja bem-vindo ao nosso sistema online de registro de ocorrências
+            com bagagem. Aqui você pode relatar incidentes, perdas ou danos
+            relacionados à sua bagagem de forma rápida e fácil.
+          </p>
+        </div>
+        <button class="btn-start" id="btn-start" data-idx="1">Iniciar</button>
+      </div>
+      <div class="box-home-img">
+        <img src="./img/bagagem home.png" alt="imagem do desenho de bagagem" srcset="" class="img-bag-Home" />
+      </div>
+    </div>
+  </div>
+
+  <div class="body-rib-app display-visibl">
+    <div class="bady-menu">
+      <ul class="menu">
+        <li class="elements-menu" id="btnHome" data-idx="0">
+          <img src="./img/icons/casa.png" alt="" srcset="" class="icon-menu" />
+        </li>
+        <li class="elements-menu" id="btnUser" data-idx="1">
+          <img src="./img/icons/usuario-do-circulo (1).png" alt="" srcset="" class="icon-menu" />
+        </li>
+        <li class="elements-menu" id="btnAdress" data-idx="2">
+          <img src="./img/icons/localizacao-da-camada-terrestre.png" alt="" srcset="" class="icon-menu" />
+        </li>
+        <li class="elements-menu" id="btnFlight" data-idx="3">
+          <img src="./img/icons/viagem-de-aviao (1).png" alt="" srcset="" class="icon-menu" />
+        </li>
+
+        <li class="elements-menu" id="btnBag" data-idx="4">
+          <img src="./img/icons/mala-alt (1).png" alt="" srcset="" class="icon-menu" />
+        </li>
+        <li class="elements-menu" id="btnAgreement" data-idx="5">
+          <img src="./img/icons/aperto-de-mao.png" alt="" srcset="" class="icon-menu" />
+        </li>
+        <li class="elements-menu" id="btnPrintl" data-idx="6">
+          <img src="./img/icons/imprimir (1).png" alt="" srcset="" class="icon-menu" />
+        </li>
+      </ul>
+    </div>
+
+    <div class="user-app body-forms">
+      <div class="container-forms">
+        <div class="box-forms">
+          <label class="lb-input" for="user-name">Nome</label>
+          <input class="general-input ipt-name" type="text" name="user-name" id="user-name"/>
+        </div>
+        <div class="box-forms">
+          <label class="lb-input" for="user-lastname">Sobrenome</label>
+          <input class="general-input ipt-lastname" type="text" name="user-lastname" id="user-lastname"/>
+        </div>
+        <div>
+          <label class="lb-input" for="user-cpf">CPF</label>
+          <input class="general-input" type="text" name="user-cpf" id="user-cpf"/>
+        </div>
+
+
+        <div class="container-category">
+          <p class="title-category">Categoria Tudo Azul:</p>
+          <labael class="" for="TudoAzul">TudoAzul</labael>
+          <input class="" type="checkbox" name="TudoAzul" id="TudoAzul">
+          <labael for="Topazio">Topazio</labael>
+          <input class="" type="checkbox" name="Topazio" id="Topazio">
+          <labael for="Safira">Safira</labael>
+          <input class="" type="checkbox" name="Safira" id="Safira">
+          <labael for="Diamante">Diamante</labael>
+          <input class="" type="checkbox" name="Diamante" id="Diamante">
+        </div>
+
+        <label class="lb-input" for="user-phone">telefone</label>
+        <input class="general-input" type="tel" name="user-phone" id="user-phone"/>
+        <label class="lb-input" for="user-email">E-mail</label>
+        <input class="general-input ipt-userEmail" type="email" name="user-email" id="user-email"/>
+      </div>
+    </div>
+    <div class="adress-app body-forms">
+      <div class="container-forms">
+        <label class="lb-input" for="">CEP</label>
+        <input class="general-input" type="number">
+
+        <div class="box-forms">
+          <label class="lb-input" for="">RUA</label>
+          <input class="general-input ipt-street" type="text">
+        </div>
+
+        <div class="box-forms">
+          <label class="lb-input" for="">BAIRRO</label>
+          <input class="general-input ipt-distrit" type="text">
+        </div>
+        <div></div>
+        <div class="box-forms">
+          <label class="lb-input" for="">CIDADE</label>
+          <input class="general-input ipt-city " type="text">
+        </div>
+
+        <div class="box-forms">
+          <label class="lb-input" for="">ESTADO</label>
+          <input class="general-input ipt-state" type="text">
+        </div>
+
+        <div>
+          <label class="lb-input" for="">COMPLEMENTO</label>
+          <input class="general-input ipt-complement" type="text">
+        </div>
+      </div>
+    </div>
+    <div class="flight-app body-forms">
+      <div class="container-forms">
+
+        <div class="case-locator">
+          <label class="lb-input" for="locator">LOCALIZADOR</label>
+          <input class="general-input" type="text" name="locator">
+        </div>
+      <div class="case-data-flight">
+        <div class="ipt-data-Flight">
+          <div class="box-forms">
+            <label class="lb-input" for="flight">VOO</label>
+            <input class="general-input" type="text" name="flight">
+          </div>
+
+          <div class="box-forms">
+            <label class="lb-input" for="date">DATA</label>
+            <input class="general-input ipt-date" type="date" name="date">
+          </div>
+
+          <div class="box-forms">
+            <label class="lb-input" for="origin">ORIGEM</label>
+            <input class="general-input" type="text" name="origin">
+          </div>
+
+          <div class="box-forms">
+            <label class="lb-input" for="destiny">DESTINO</label>
+            <input class="general-input destiny" type="text" name="destiny">
+          </div>
+          <button class="box-forms" id="case-btn" action = "add">
+            <img src="./img/icons/adicionar2.png" alt="icone de adicionar" srcset="" class="btn-add-bag" action = "add">
+        </button>
+          
+        </div>
+        <p class="error-text" id="text-list-error">campos obrigatorios não preenchidos </p>
+        <ul class="listFlight" >
+        </ul>
+      </div>  
+      </div>
+
+    </div>
+    <div class="body-forms">
+      <div class="bag-app" id="bag-app">
+        <div class="container-forms container-bag">
+  
+          <div class="box-bag">
+  
+            <div class="box-forms ipt-select-colors">
+              <label class="lb-input" for="">COR</label>
+              <!-- <input class="general-input" type="text"> -->
+              <select class="general-input " id="bagColors">
+                <option></option>
+                <option class="select-bk">BK</option>
+                <option class="select-wt">WT</option>
+                <option class="select-gy">GY</option>
+                <option class="select-bu">BU</option>
+                <option class="select-rd">RD</option>
+                <option class="select-tw">YW</option>
+                <option class="select-be">be</option>
+                <option class="select-bn">bn</option>
+                <option class="select-gn">gn</option>
+                <option class="select-pu">pu</option>
+                <option class="select-pr">pr</option>
+              </select>
+            </div>
+  
+            <div class="box-forms">
+              <label class="lb-input" for="">MARCA</label>
+              <input class="general-input" type="text" id="bagBrand">
+            </div>
+  
+            <div class="box-forms">
+              <label class="lb-input" for="">N° ETIQUETA</label>
+              <input class="general-input" type="text" id="bagTagNumber">
+            </div>
+  
+            <div class="box-forms">
+              <label class="lb-input" for="">PESO</label>
+              <input class="general-input ipt-weight" type="text" id="bagWeight" >
+            </div>
+            <div class="box-bag-dpr bagProcess">
+  
+              <div class="box-list-dpr">
+                <h5>área</h5>
+                <ul class="list-dpr" id="dprArea">
+                  <li>
+                    <input class="dpr-checkbox" type="checkbox" id="lateral" atrb="dprArea">
+                    <label class="lb-dpr-checkbox" for="lateral">lateral</label>
+                  </li>
+                  <li>
+                    <input class="dpr-checkbox" type="checkbox" id="ziper" atrb="dprArea">
+                    <label class="lb-dpr-checkbox" for="ziper">ziper</label>
+                  </li>
+                  <li>
+  
+                    <input class="dpr-checkbox" type="checkbox" id="inferior" atrb="dprArea">
+                    <label class="lb-dpr-checkbox" for="inferior">inferior</label>
+  
+                  </li>
+  
+                  <li>
+                    <input class="dpr-checkbox" type="checkbox" id="superior" atrb="dprArea">
+                    <label class="lb-dpr-checkbox" for="superior">superior</label>
+  
+                  </li>
+                </ul>
+  
+              </div>
+              <div class="box-list-dpr ">
+                <h5>local</h5>
+                <ul class="list-dpr">  
+                  <li>
+                    <input class="dpr-checkbox" type="checkbox" atrb="dprLocal" name="alça">
+                    <label class="lb-dpr-checkbox" for="">alça</label>
+                  </li>
+                  <li>              
+                    <input class="dpr-checkbox" type="checkbox" atrb="dprLocal" name="rasgo/rachadura">
+                    <label class="lb-dpr-checkbox" for="">rasgo/rachadura</label>
+                  </li>
+                
+                  <li>
+                    <input class="dpr-checkbox" type="checkbox" atrb="dprLocal" name="pé/rodas">
+                    <label class="lb-dpr-checkbox" for="">pé/rodas</label>
+                  </li>
+                  <li>
+                    <input class="dpr-checkbox" type="checkbox" atrb="dprLocal" name="armação">
+                    <label class="lb-dpr-checkbox" for="">armação</label>
+                  </li>
+                </ul>
+  
+              </div>
+            </div>
+            <div class="box-bag-ahl bagProcess">
+              <h5>conteúdo relevante</h5>
+              <div class="box-category">
+                <div class="box-ipts-category">
+                  <label for="conteudo" class="lb-input">categoria</label>
+                  <input type="text" class="general-input ipt-category" atrb="ahlCategory">
+                  <input type="text" class="general-input ipt-category" atrb="ahlCategory">              
+                  <input type="text" class="general-input ipt-category" atrb="ahlCategory">
+                  <input type="text" class="general-input ipt-category" atrb="ahlCategory">
+                </div>
+                <div class="box-ipts-category">
+                  <label for="" class="lb-input">Descrição</label>
+                  <input type="text" class="general-input ipt-category" atrb="ahlDescription">
+                  <input type="text" class="general-input ipt-category" atrb="ahlDescription">              
+                  <input type="text" class="general-input ipt-category" atrb="ahlDescription">
+                  <input type="text" class="general-input ipt-category" atrb="ahlDescription">
+  
+                </div>
+                
+              </div>
+  
+            </div>
+            <div class="box-bag-pfr bagProcess">
+              <div>
+                <label for="" class="lb-input">peso faltante</label>
+                <input type="text" name="" id="" class="general-input ipt-weight" atrb="pfrWeight">
+
+                <label for="" class="lb-input">Falta de conteúdo</label>
+                <textarea name="inf-add" id="" cols="30" rows="10" class="general-input ipt-add-inf" atrb="pfrContent"></textarea>></textarea>
+              </div>
+            </div>
+  
+            <div class="box-add-inf">
+              <label class="lb-input" for="">informações adicionais</label>
+              <!-- <input class="general-input ipt-add-inf" type="text"> -->
+              <textarea name="inf-add" id="" cols="30" rows="10" class="general-input ipt-add-inf"></textarea>
+            </div>
+            <input type="button" value="adicionar" class="btn-bag" id="btnAddBagProcess">
+          </div>
+        </div>
+        <div class="box-btn">
+          <input type="radio" value="DPR" id="dpr" class="btn-bag" data-value="0" name="btnProcess">
+          <label class="labelBtnProcess" for="dpr">DPR</label>
+          <input type="radio" value="AHL" id="ahl" class="btn-bag" data-value="1" name="btnProcess">
+          <label class="labelBtnProcess" for="ahl">AHL</label>
+          <input type="radio" value="PFR" id="pfr" class="btn-bag" data-value="2" name="btnProcess">
+          <label class="labelBtnProcess" for="pfr">PFR</label>
+            <div class="box-listBag">
+              <ul class="listBag" id="listBag">
+                               
+              </ul>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+</body>
+<script src="./js/navigation.js"></script>
+<script src="./js/getData.js"></script>
+<script src="./js/getDataBag.js"></script>
+</html>
