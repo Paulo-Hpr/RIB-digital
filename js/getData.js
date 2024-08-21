@@ -9,7 +9,7 @@ let btnAddBag = document.querySelector('.btn-add-bag')
 let caseBtn = document.getElementById("case-btn")
 let textError = document.getElementById("text-list-error")
 let destiny = document.querySelector(".destiny")
-let flghtRouter =[]
+let flghtRouter =[ {i:1},{e:1},{e:1} ]
 let voo
 let data
 let origem
@@ -32,7 +32,7 @@ btnRemove.addEventListener('click', removeFlight)
 function addFlight(e) {
     const tagAction= e.target.getAttribute("action")
     if (tagAction !== "add") return
-    if (flghtRouter.length > 4) return
+    if (flghtRouter.length < 4) {
 
     const [...inputs] = e.currentTarget.firstElementChild.getElementsByClassName('general-input')
     
@@ -68,7 +68,7 @@ function addFlight(e) {
     listFlightconstructor()
     
     textError.classList.remove("ipt-error")
-
+    }
 }
 
 

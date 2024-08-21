@@ -98,7 +98,7 @@ body {
 /* ***************  HOME PAGE ***************** */
 .bodyHome{
   /* display: none; */
-  margin:180px auto;
+  margin:80px auto;
   width:1000px;
   height: 540px;
   background: #fff;
@@ -161,7 +161,7 @@ body {
 
 .body-rib-app{
 
-  margin:180px auto;
+  margin:80px auto;
   background-color: #fff;
   width: 1000px;
   height: 600px;

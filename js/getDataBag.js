@@ -6,6 +6,7 @@ let bagTagNumber = document.getElementById("bagTagNumber")
 let bagWeight = document.getElementById("bagWeight")
 let btnAddBagProcess = document.getElementById("btnAddBagProcess")
 let boxBagApp = document.getElementById("bag-app")
+let infAdditional = document.getElementById("infAdditional")
 
 function getSelectedProcessBag(){
     const selectedRadio = document.querySelector('input[name="btnProcess"]:checked');
@@ -65,7 +66,8 @@ function addBag() {
         bagTagNumber: `${bagTagNumber.value}`,
         bagWeight: `${bagWeight.value}`,
         processBag: processTypeBag,
-        bagInformation:bagInfo
+        bagInformation:bagInfo,
+        additionalInf:infAdditional.value
     })
 
     listBagConstructor()
@@ -91,10 +93,18 @@ function listBagConstructor() {
 
             listBag.appendChild(li)
     })
+    clearFields()
 }
 
 function clearFields() {
-    const fields = Array.from(boxBagApp.querySelectorAll('input')).filter(input=> input.value.trim() != '' )
-    fields.forEach(el => el.value = '')
-    console.log(fields)
+    const fieldsText = Array.from(boxBagApp.querySelectorAll('input[type="text"]')).filter(input=> input.value.trim() != '' )
+    fieldsText.forEach(el => el.value = ""
+    )
+    const fieldsCheck = boxBagApp.querySelectorAll('input[type="checkbox"]')
+    fieldsCheck.forEach(el => el.checked = false
+    )
+    const fieldsSelect = boxBagApp.querySelectorAll('option')
+    fieldsSelect.forEach(el => el.selected = false
+    )
+    
 }
