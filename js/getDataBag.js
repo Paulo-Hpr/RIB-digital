@@ -19,8 +19,10 @@ btnAddBagProcess.addEventListener('click',addBag)
 function addBag() {
     const processTypeBag = getSelectedProcessBag()
     let bagInfo
+    let bagAgreement
     switch (processTypeBag) {
         case 'DPR':
+            bagAgreement = document.querySelector('input[name="agreement"]:checked').value;
             const selectedArea = document.querySelectorAll('input[atrb="dprArea"]:checked');
             dprArea = Array.from(selectedArea).map(el => el.id)
 
@@ -29,7 +31,8 @@ function addBag() {
 
             bagInfo = {
                 aerea: dprArea,
-                local: dprLocal
+                local: dprLocal,
+               
             }
             break;
             
@@ -45,6 +48,7 @@ function addBag() {
             break;
 
         case 'AHL': 
+            bagAgreement = document.querySelector('input[name="agreement-rush"]:checked').value;
             const ahlCategory = Array.from(document.querySelectorAll('input[atrb="ahlCategory"]')).filter(input=> input.value.trim() != '' ).map(el => el.value);
             
             const ahlDescription = Array.from(document.querySelectorAll('input[atrb="ahlDescription"]')).filter(input=> input.value.trim() != '' ).map(el => el.value);
@@ -67,6 +71,7 @@ function addBag() {
         bagWeight: `${bagWeight.value}`,
         processBag: processTypeBag,
         bagInformation:bagInfo,
+        Agreement: bagAgreement,
         additionalInf:infAdditional.value
     })
 
@@ -105,6 +110,9 @@ function clearFields() {
     )
     const fieldsSelect = boxBagApp.querySelectorAll('option')
     fieldsSelect.forEach(el => el.selected = false
+    )
+    const fieldstextArea = boxBagApp.querySelectorAll('textarea')
+    fieldstextArea.forEach(el => el.value = ""
     )
     
 }

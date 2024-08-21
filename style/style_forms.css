@@ -496,6 +496,8 @@ display: none;
 }
 .box-category{
   display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
 }
 .box-ipts-category{
   margin-right: 15px;
@@ -510,6 +512,12 @@ display: none;
 
 #dpr,#ahl,#pfr{
   display: none;
+}
+.box-agreement{
+  margin-top: 20px;
+}
+.box-agreement h5{
+  margin-bottom: 10px;
 }
 .labelBtnProcess {
   text-align: center;

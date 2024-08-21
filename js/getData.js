@@ -9,7 +9,7 @@ let btnAddBag = document.querySelector('.btn-add-bag')
 let caseBtn = document.getElementById("case-btn")
 let textError = document.getElementById("text-list-error")
 let destiny = document.querySelector(".destiny")
-let flghtRouter =[ {i:1},{e:1},{e:1} ]
+let flghtRouter =[]
 let voo
 let data
 let origem
