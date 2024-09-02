@@ -579,3 +579,71 @@ display: none;
   width: 30px;
   margin: 5px 8px;
 }
+
+
+/* ********* agreement ******** */
+
+.box-textComents{
+  margin-top: 15px;
+}
+.btn-agreement{
+  
+  margin-top: 10px;
+  height: 55px;
+  width: 175px;
+  background-color: #1b9cd8;
+  border: #1B9BD8;
+  border-radius:0 0  8px 8px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0px 1px 1px 0px #016797eb;
+  display: inline-block;
+  font-size: 12px;
+  user-select: none;
+}
+.btn-agreement:hover{
+  background-color:#037ab1 ;
+
+}
+.textComents{
+  display: block;
+  margin-top: 10px;
+  width: 90%;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.box-textComents{
+  
+  margin-top: 20px;
+}
+.container-btns-agreement{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin: 30px 15px;
+}
+.container-textComents{
+  display: flex;
+  justify-content: center;
+}
+.case-btn-agreement{
+
+  /* background-color: #1b9cd8 ; */
+  border-radius: 8px;
+  border: 1px solid #037ab173 ;
+  display: inline-block;
+  width:175px ;
+  /* height: 210px; */
+  box-shadow: 0px 1px 1px 0px #016797eb;
+
+}
+.case-btn-agreement:hover{
+  background: #037ab137;
+}
+.img-btn-agreement{
+  text-align: center;
+  margin: 12px 50px;
+}
