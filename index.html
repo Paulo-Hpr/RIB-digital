@@ -14,8 +14,8 @@
 </head>
 
 <body>
-  <div class="body-forms" >
-    
+  <div class="body-forms">
+
     <div class="bodyHome">
       <div class="box-home">
         <h1 class="title-home">
@@ -68,64 +68,68 @@
       <div class="container-forms">
         <div class="box-forms">
           <label class="lb-input" for="user-name">Nome</label>
-          <input class="general-input ipt-name" type="text" name="user-name" id="user-name"/>
+          <input class="general-input ipt-name" type="text" name="user-name" id="user-name" />
         </div>
         <div class="box-forms">
           <label class="lb-input" for="user-lastname">Sobrenome</label>
-          <input class="general-input ipt-lastname" type="text" name="user-lastname" id="user-lastname"/>
+          <input class="general-input ipt-lastname" type="text" name="user-lastname" id="user-lastname" />
         </div>
         <div>
           <label class="lb-input" for="user-cpf">CPF</label>
-          <input class="general-input" type="text" name="user-cpf" id="user-cpf"/>
+          <input class="general-input" type="text" name="user-cpf" id="user-cpf" />
         </div>
 
 
         <div class="container-category">
           <p class="title-category">Categoria Tudo Azul:</p>
           <labael class="" for="TudoAzul">TudoAzul</labael>
-          <input class="" type="checkbox" name="TudoAzul" id="TudoAzul">
+          <input class="" type="checkbox" name="TudoAzul" id="TudoAzul" atrb="azulCategory">
           <labael for="Topazio">Topazio</labael>
-          <input class="" type="checkbox" name="Topazio" id="Topazio">
+          <input class="" type="checkbox" name="Topazio" id="Topazio" atrb="azulCategory">
           <labael for="Safira">Safira</labael>
-          <input class="" type="checkbox" name="Safira" id="Safira">
+          <input class="" type="checkbox" name="Safira" id="Safira" atrb="azulCategory">
           <labael for="Diamante">Diamante</labael>
-          <input class="" type="checkbox" name="Diamante" id="Diamante">
+          <input class="" type="checkbox" name="Diamante" id="Diamante" atrb="azulCategory">
         </div>
 
         <label class="lb-input" for="user-phone">telefone</label>
-        <input class="general-input" type="tel" name="user-phone" id="user-phone"/>
+        <input class="general-input" type="tel" name="user-phone" id="user-phone" />
         <label class="lb-input" for="user-email">E-mail</label>
-        <input class="general-input ipt-userEmail" type="email" name="user-email" id="user-email"/>
+        <input class="general-input ipt-userEmail" type="email" name="user-email" id="user-email" />
       </div>
     </div>
     <div class="adress-app body-forms">
       <div class="container-forms">
         <label class="lb-input" for="">CEP</label>
-        <input class="general-input" type="number">
+        <input class="general-input ipt-cep" id="ipt-cep" type="text">
 
         <div class="box-forms">
           <label class="lb-input" for="">RUA</label>
-          <input class="general-input ipt-street" type="text">
+          <input class="general-input ipt-street" id="ipt-street" type="text">
         </div>
 
         <div class="box-forms">
           <label class="lb-input" for="">BAIRRO</label>
-          <input class="general-input ipt-distrit" type="text">
+          <input class="general-input ipt-distrit" id="ipt-distrit" type="text">
         </div>
         <div></div>
         <div class="box-forms">
           <label class="lb-input" for="">CIDADE</label>
-          <input class="general-input ipt-city " type="text">
+          <input class="general-input ipt-city " id="ipt-city" type="text">
         </div>
 
         <div class="box-forms">
           <label class="lb-input" for="">ESTADO</label>
-          <input class="general-input ipt-state" type="text">
+          <input class="general-input ipt-state" id="ipt-state" type="text">
+        </div>
+        <div class="box-forms">
+          <label class="lb-input" for="">NÚMERO</label>
+          <input class="general-input ipt-state" id="ipt-number" type="text">
         </div>
 
         <div>
           <label class="lb-input" for="">COMPLEMENTO</label>
-          <input class="general-input ipt-complement" type="text">
+          <input class="general-input ipt-complement" id="ipt-complement" type="text">
         </div>
       </div>
     </div>
@@ -134,47 +138,47 @@
 
         <div class="case-locator">
           <label class="lb-input" for="locator">LOCALIZADOR</label>
-          <input class="general-input" type="text" name="locator">
+          <input class="general-input" type="text" name="locator" id="locator">
         </div>
-      <div class="case-data-flight">
-        <div class="ipt-data-Flight">
-          <div class="box-forms">
-            <label class="lb-input" for="flight">VOO</label>
-            <input class="general-input" type="text" name="flight">
-          </div>
+        <div class="case-data-flight">
+          <div class="ipt-data-Flight">
+            <div class="box-forms">
+              <label class="lb-input" for="flight">VOO</label>
+              <input class="general-input" type="text" name="flight">
+            </div>
 
-          <div class="box-forms">
-            <label class="lb-input" for="date">DATA</label>
-            <input class="general-input ipt-date" type="date" name="date">
-          </div>
+            <div class="box-forms">
+              <label class="lb-input" for="date">DATA</label>
+              <input class="general-input ipt-date" type="date" name="date" id="ipt-date">
+            </div>
 
-          <div class="box-forms">
-            <label class="lb-input" for="origin">ORIGEM</label>
-            <input class="general-input" type="text" name="origin">
-          </div>
+            <div class="box-forms">
+              <label class="lb-input" for="origin">ORIGEM</label>
+              <input class="general-input" type="text" name="origin">
+            </div>
 
-          <div class="box-forms">
-            <label class="lb-input" for="destiny">DESTINO</label>
-            <input class="general-input destiny" type="text" name="destiny">
+            <div class="box-forms">
+              <label class="lb-input" for="destiny">DESTINO</label>
+              <input class="general-input destiny" type="text" name="destiny">
+            </div>
+            <button class="box-forms" id="case-btn" action="add">
+              <img src="./img/icons/adicionar2.png" alt="icone de adicionar" srcset="" class="btn-add-bag" action="add">
+            </button>
+
           </div>
-          <button class="box-forms" id="case-btn" action = "add">
-            <img src="./img/icons/adicionar2.png" alt="icone de adicionar" srcset="" class="btn-add-bag" action = "add">
-        </button>
-          
+          <p class="error-text" id="text-list-error">campos obrigatorios não preenchidos </p>
+          <ul class="listFlight">
+          </ul>
         </div>
-        <p class="error-text" id="text-list-error">campos obrigatorios não preenchidos </p>
-        <ul class="listFlight" >
-        </ul>
-      </div>  
       </div>
 
     </div>
     <div class="body-forms">
       <div class="bag-app" id="bag-app">
         <div class="container-forms container-bag">
-  
+
           <div class="box-bag">
-  
+
             <div class="box-forms ipt-select-colors">
               <label class="lb-input" for="">COR</label>
               <!-- <input class="general-input" type="text"> -->
@@ -193,23 +197,23 @@
                 <option class="select-pr">pr</option>
               </select>
             </div>
-  
+
             <div class="box-forms">
               <label class="lb-input" for="">MARCA</label>
               <input class="general-input" type="text" id="bagBrand">
             </div>
-  
+
             <div class="box-forms">
               <label class="lb-input" for="">N° ETIQUETA</label>
               <input class="general-input" type="text" id="bagTagNumber">
             </div>
-  
+
             <div class="box-forms">
               <label class="lb-input" for="">PESO</label>
-              <input class="general-input ipt-weight" type="text" id="bagWeight" >
+              <input class="general-input ipt-weight" type="text" id="bagWeight">
             </div>
             <div class="box-bag-dpr bagProcess">
-  
+
               <div class="box-list-dpr">
                 <h5>área</h5>
                 <ul class="list-dpr" id="dprArea">
@@ -222,32 +226,32 @@
                     <label class="lb-dpr-checkbox" for="ziper">ziper</label>
                   </li>
                   <li>
-  
+
                     <input class="dpr-checkbox" type="checkbox" id="inferior" atrb="dprArea">
                     <label class="lb-dpr-checkbox" for="inferior">inferior</label>
-  
+
                   </li>
-  
+
                   <li>
                     <input class="dpr-checkbox" type="checkbox" id="superior" atrb="dprArea">
                     <label class="lb-dpr-checkbox" for="superior">superior</label>
-  
+
                   </li>
                 </ul>
-  
+
               </div>
               <div class="box-list-dpr ">
                 <h5>local</h5>
-                <ul class="list-dpr">  
+                <ul class="list-dpr">
                   <li>
                     <input class="dpr-checkbox" type="checkbox" atrb="dprLocal" name="alça">
                     <label class="lb-dpr-checkbox" for="">alça</label>
                   </li>
-                  <li>              
+                  <li>
                     <input class="dpr-checkbox" type="checkbox" atrb="dprLocal" name="rasgo/rachadura">
                     <label class="lb-dpr-checkbox" for="">rasgo/rachadura</label>
                   </li>
-                
+
                   <li>
                     <input class="dpr-checkbox" type="checkbox" atrb="dprLocal" name="pé/rodas">
                     <label class="lb-dpr-checkbox" for="">pé/rodas</label>
@@ -257,7 +261,7 @@
                     <label class="lb-dpr-checkbox" for="">armação</label>
                   </li>
                 </ul>
-  
+
               </div>
               <div class="box-agreement">
                 <h5>Tratativa realizada com: </h5>
@@ -278,21 +282,21 @@
                 <div class="box-ipts-category">
                   <label for="conteudo" class="lb-input">categoria</label>
                   <input type="text" class="general-input ipt-category" atrb="ahlCategory">
-                  <input type="text" class="general-input ipt-category" atrb="ahlCategory">              
+                  <input type="text" class="general-input ipt-category" atrb="ahlCategory">
                   <input type="text" class="general-input ipt-category" atrb="ahlCategory">
                   <input type="text" class="general-input ipt-category" atrb="ahlCategory">
                 </div>
                 <div class="box-ipts-category">
                   <label for="" class="lb-input">Descrição</label>
                   <input type="text" class="general-input ipt-category" atrb="ahlDescription">
-                  <input type="text" class="general-input ipt-category" atrb="ahlDescription">              
                   <input type="text" class="general-input ipt-category" atrb="ahlDescription">
                   <input type="text" class="general-input ipt-category" atrb="ahlDescription">
-  
+                  <input type="text" class="general-input ipt-category" atrb="ahlDescription">
+
                 </div>
                 <div class="box-agreement">
                   <h5>possui rush emitida? </h5>
-  
+
                   <input type="radio" value="rushTrue" id="rushTrue" class="" data-value="0" name="agreement-rush">
                   <label class="" for="rushTrue">sim</label>
                   <input type="radio" value="rushFalse" id="rushFalse" class="" data-value="0" name="agreement-rush">
@@ -307,14 +311,16 @@
                 <input type="text" name="" id="" class="general-input ipt-weight" atrb="pfrWeight">
 
                 <label for="" class="lb-input">Falta de conteúdo</label>
-                <textarea name="inf-add" id="" cols="30" rows="10" class="general-input ipt-add-inf" atrb="pfrContent"></textarea></textarea>
+                <textarea name="inf-add" id="" cols="30" rows="10" class="general-input ipt-add-inf"
+                  atrb="pfrContent"></textarea></textarea>
               </div>
             </div>
-  
+
             <div class="box-add-inf">
               <label class="lb-input" for="">informações adicionais</label>
               <!-- <input class="general-input ipt-add-inf" type="text"> -->
-              <textarea name="inf-additional " id="infAdditional" cols="30" rows="10" class="general-input ipt-add-inf"></textarea>
+              <textarea name="inf-additional " id="infAdditional" cols="30" rows="10"
+                class="general-input ipt-add-inf"></textarea>
             </div>
             <input type="button" value="adicionar" class="btn-bag" id="btnAddBagProcess">
           </div>
@@ -326,63 +332,65 @@
           <label class="labelBtnProcess" for="ahl">AHL</label>
           <input type="radio" value="PFR" id="pfr" class="btn-bag" data-value="2" name="btnProcess">
           <label class="labelBtnProcess" for="pfr">PFR</label>
-            <div class="box-listBag">
-              <ul class="listBag" id="listBag">
-                               
-              </ul>
-            </div>
+          <div class="box-listBag">
+            <ul class="listBag" id="listBag">
+
+            </ul>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- ____________________________ AGREEMENT ____________________________________________________________ -->
+
     <div class="agreement-app body-forms">
       <div class="container-btns-agreement">
-      <div class="case-btn-agreement">
-        <div class="img-btn-agreement">
-          <img src="./img/icons/contrato (1).png" alt="" srcset="">
+        <div class="case-btn-agreement">
+          <div class="img-btn-agreement">
+            <img src="./img/icons/contrato (1).png" alt="" srcset="">
+          </div>
+          <button class="btn-agreement" id="btnTerm">termo de recebimento</button>
         </div>
-        <button class="btn-agreement">termo de recebimento</button>
+
+        <div class="case-btn-agreement">
+          <div class="img-btn-agreement">
+            <img src="./img/icons/verificar.png" alt="" srcset="">
+          </div>
+          <button class="btn-agreement">
+            rib
+          </button>
+        </div>
+
+        <div class="case-btn-agreement">
+          <div class="img-btn-agreement">
+            <img src="./img/icons/marketing-de-email.png" alt="" srcset="">
+          </div>
+          <button class="btn-agreement">
+            gerar email
+          </button>
+        </div>
+
+        <div class="case-btn-agreement">
+          <div class="img-btn-agreement">
+            <img src="./img/icons/comentarios (1).png" alt="" srcset="">
+          </div>
+          <button class="btn-agreement">
+            gerar comentario
+          </button>
+        </div>
       </div>
 
-      <div  class="case-btn-agreement">
-        <div class="img-btn-agreement">
-          <img src="./img/icons/verificar.png" alt="" srcset="">
-        </div>
-        <button class="btn-agreement" >
-           rib
-        </button>
-      </div>
-
-      <div  class="case-btn-agreement">
-        <div class="img-btn-agreement">
-          <img src="./img/icons/marketing-de-email.png" alt="" srcset="">
-        </div>
-        <button class="btn-agreement" >
-          gerar email
-        </button>
-      </div>
-
-      <div  class="case-btn-agreement">
-        <div class="img-btn-agreement">
-          <img src="./img/icons/comentarios (1).png" alt="" srcset="">
-        </div>
-        <button class="btn-agreement" >
-          gerar comentario
-        </button>
+      <div class="container-textComents">
+        <textarea id="textComents" cols="30" rows="10" class="textComents"></textarea>
       </div>
     </div>
-<!--     
-      <button class="btn-agreement"> gerar email</button>
-      <div class="box-textComents">
-        <button class="btn-agreement">gerar contario</button> -->
-        <div class="container-textComents">
-        <textarea  id="textComents" cols="30" rows="10" class="textComents"></textarea>
-      </div>
-      </div>
-    </div>
+  </div>
   </div>
   </div>
 </body>
 <script src="./js/navigation.js"></script>
 <script src="./js/getData.js"></script>
 <script src="./js/getDataBag.js"></script>
+<script src="./js/getUser.js"></script>
+
 </html>

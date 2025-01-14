@@ -1,8 +1,4 @@
-let name = document.getElementById("user-name")
-let familyName = document.getElementById("user-lastname")
-let phone = document.getElementById("user-phone")
-let email = document.getElementById("user-email")
-let  cpf = document.getElementById("user-cpf")
+
 let divCaseDataFly = document.querySelector('.case-data-flight')
 let listFlight = document.querySelector('.listFlight')
 let btnAddBag = document.querySelector('.btn-add-bag')
