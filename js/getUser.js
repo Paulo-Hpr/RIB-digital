@@ -16,15 +16,6 @@ let locator = document.getElementById("locator")
 let iptdate = document.getElementById("ipt-date")
 
 
-let userRib = {
-    nome: firstName.value,
-    familyName:familyName.value,
-    cpf:cpf.value,
-    phone:phone.value,
-    email:email.value,
-    category:selectedCategory
-}
-
 let btnTerm = document.getElementById("btnTerm")
 
 btnTerm.addEventListener('click',getAll)
@@ -35,10 +26,11 @@ function getAll() {
     {
         firstName:firstName.value,
         familyName:familyName.value,
-         cpf: cpf.value,
+        cpf: cpf.value,
         phone:phone.value,
         email:email.value,
         selectedCategory:selectedCategory,
+
         iptCep:iptCep.value,
         iptStreet:iptStreet.value,
         iptDistrit:iptDistrit.value,
@@ -46,13 +38,16 @@ function getAll() {
         iptState:iptState.value,
         iptNumber:iptNumber.value,
         iptComplement:iptComplement.value,
+
         locator:locator.value,
-        date:iptdate.value,
         flghtRouter,
         faultyBags
     }
 
     sessionStorage.setItem("allData",JSON.stringify(generalData))
+    
+    window.open("./termorecebimento.html");
+
 }
 
 // window.open(`./termorecebimento.html?firstName=${generalData.firstName}&familyName=${generalData.familyName}&locator=${brDate}&bagscount=${faultyBags.length}`)
