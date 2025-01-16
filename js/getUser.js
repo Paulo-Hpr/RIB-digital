@@ -4,7 +4,7 @@ let  cpf = document.getElementById("user-cpf")
 let phone = document.getElementById("user-phone")
 let email = document.getElementById("user-email")
 let selectedCategory = document.querySelector('input[atrb="azulCategory"]:checked');
-let rushAgreement = document.querySelector('input[name="agreement-rush"]:checked').value;
+let rushAgreement = document.querySelector('input[name="agreement-rush"]:checked');
 let generalData = {}
 let iptCep = document.getElementById("ipt-cep")
 let iptStreet = document.getElementById("ipt-street")
