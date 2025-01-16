@@ -5,7 +5,8 @@
     width: 210mm;
     min-height: 297mm;
     background: #fff;
-    border:1px solid #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
     position: relative;
     text-align:justify;
     
@@ -19,7 +20,7 @@
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: flex-end;
-    margin-bottom: 100PX;
+    margin-bottom: 90px;
 }
 .img-azul{
     width: 150px;
@@ -63,7 +64,10 @@ td{
     margin-top: 290px;
 }
 .termBold{
-    font-size: 14px;
+    font-size: 16pt;
     text-transform: uppercase;
     font-weight: bold;
+}
+.lineSignature{
+    padding-top: 40px;
 }

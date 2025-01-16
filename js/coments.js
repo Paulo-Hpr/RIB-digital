@@ -1,0 +1,1 @@
+let allData = JSON.parse(sessionStorage.getItem("allData"))

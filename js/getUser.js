@@ -4,6 +4,7 @@ let  cpf = document.getElementById("user-cpf")
 let phone = document.getElementById("user-phone")
 let email = document.getElementById("user-email")
 let selectedCategory = document.querySelector('input[atrb="azulCategory"]:checked');
+let rushAgreement = document.querySelector('input[name="agreement-rush"]:checked').value;
 let generalData = {}
 let iptCep = document.getElementById("ipt-cep")
 let iptStreet = document.getElementById("ipt-street")
@@ -18,7 +19,7 @@ let iptdate = document.getElementById("ipt-date")
 
 let btnTerm = document.getElementById("btnTerm")
 
-btnTerm.addEventListener('click',getAll)
+btnTerm.addEventListener('click',printTerm)
 
 function getAll() {
    
@@ -44,15 +45,29 @@ function getAll() {
         faultyBags
     }
 
-    sessionStorage.setItem("allData",JSON.stringify(generalData))
+    return sessionStorage.setItem("allData",JSON.stringify(generalData))
     
-    window.open("./termorecebimento.html");
-
 }
 
-// window.open(`./termorecebimento.html?firstName=${generalData.firstName}&familyName=${generalData.familyName}&locator=${brDate}&bagscount=${faultyBags.length}`)
 
-
-function goScript2() {    
+function printTerm() { 
+    getAll()   
     window.open("./termorecebimento.html");
     }
+
+function generatorComents() {
+let textComents = document.getElementById("textComents")
+let numbertag
+    faultyBags.forEach(el => {
+        numbertag += el.bagTagNumber + " "
+         console.log(numbertag)
+         switch (el.processBag) {
+            case "AHL":
+                textComents.value = "Incidente de ausência de bagagem no momento do desembarque. Etiqueta nº "+ numbertag +". Foi orientado sobre os procedimentos de rastreio e solicitado endereço para entrega, caso a bagagem seja localizada. Informado que será atualizado sobre o status assim que possívelste"
+                break;
+         
+            default:
+                break;
+         }
+    });
+}    

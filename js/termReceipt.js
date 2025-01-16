@@ -1,7 +1,7 @@
 
 
 let allData = JSON.parse(sessionStorage.getItem("allData"))
-console.log(allData)  
+
 
 let tagNumber = document.getElementById("tagNumber")
 allData.faultyBags.forEach(el =>{
@@ -11,7 +11,6 @@ allData.faultyBags.forEach(el =>{
 
 let flitghs = document.getElementById("flitghs")
  allData.flghtRouter.forEach(el =>{
-    console.log(el.voo)
     flitghs.innerText += " AD" + el.voo + "/"
 })
 
@@ -19,7 +18,12 @@ let amountBag = document.getElementById("amountBag")
 amountBag.innerText = allData.faultyBags.length
 
 let date = document.getElementById("date")
-date.innerText = allData.flghtRouter[0].data
+let dateFLy = new Date(allData.flghtRouter[0].data)
+const dia = String(dateFLy.getDate()).padStart(2, '0');
+const mes = String(dateFLy.getMonth() + 1).padStart(2, '0'); // 
+const ano = dateFLy.getFullYear();
+date.innerText = `${dia}/${mes}/${ano}`;
+
 
 
 let reservation = document.getElementById("reservation")
