@@ -18,8 +18,10 @@ let iptdate = document.getElementById("ipt-date")
 
 
 let btnTerm = document.getElementById("btnTerm")
+let btnComents = document.getElementById("btnComents")
 
 btnTerm.addEventListener('click',printTerm)
+btnComents.addEventListener('click',generatorComents)
 
 function getAll() {
    
@@ -56,18 +58,6 @@ function printTerm() {
     }
 
 function generatorComents() {
-let textComents = document.getElementById("textComents")
-let numbertag
-    faultyBags.forEach(el => {
-        numbertag += el.bagTagNumber + " "
-         console.log(numbertag)
-         switch (el.processBag) {
-            case "AHL":
-                textComents.value = "Incidente de ausência de bagagem no momento do desembarque. Etiqueta nº "+ numbertag +". Foi orientado sobre os procedimentos de rastreio e solicitado endereço para entrega, caso a bagagem seja localizada. Informado que será atualizado sobre o status assim que possívelste"
-                break;
-         
-            default:
-                break;
-         }
-    });
+    getAll()   
+    window.open("./coments.html");
 }    
