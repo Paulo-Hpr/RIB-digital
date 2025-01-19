@@ -1,21 +1,29 @@
 let allData = JSON.parse(sessionStorage.getItem("allData"))
 
+let caseComents = document.getElementById("case-coments")
+let caseList = document.getElementById("caseList")
 
-let textComents = document.getElementById("textComents")
-    faultyBags.forEach(el => {
-        switch (el.processBag) {
-            case "AHL":
-                let numbertagAHL
-                numbertagAHL += el.bagTagNumber + " "
-                textComents.value += "Incidente de ausência de bagagem no momento do desembarque. Etiqueta nº "+ numbertagAHL +". Foi orientado sobre os procedimentos de rastreio e solicitado endereço para entrega, caso a bagagem seja localizada. Informado que será atualizado sobre o status assim que possível "
-                break;
-            case "DPR":
-                let numbertagDPR
-                numbertagDPR += el.bagTagNumber + " "
-                textComents.value += `<br></br>` + "Incidente de danificação de bagagem no momento do desembarque. Etiqueta nº "+ numbertagDPR +". Foi orientado sobre os procedimentos de rastreio e solicitado endereço para entrega, caso a bagagem seja localizada. Informado que será atualizado sobre o status assim que possívelste"
-                break;
-         
-            default:
-                break;
-         }
-    });
+function createList() {
+    const p = document.createElement("p")
+    const p2 = document.createElement("p")
+    p.textContent = "Incidente(s) registrado(s) no momento do desembarque:"
+    caseList.appendChild(p)
+
+    allData.faultyBags.forEach(el => {
+
+        createItensList(
+        el.bagTagNumber,
+        el.processBag,
+        el.Agreement
+        )
+
+    })
+    p2.textContent = "Cliente informado dos prazos das tratativas e atualizações das ocorrências"
+    caseList.appendChild(p2)
+}
+
+function createItensList(tagNum,process,agreement) {
+    const li = document.createElement("li")
+    li.textContent = `* Etiqueta ${tagNum} - ${process} - ${agreement}`
+    caseList.appendChild(li)
+}
