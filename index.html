@@ -9,6 +9,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet" />
+    <link rel="stylesheet" href="./style/style_coments.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RIB-DIGITAL</title>
 </head>
@@ -272,7 +273,7 @@
                 <input type="radio" value="conserto" id="conserto" class="" data-value="0" name="agreement">
                 <label class="" for="conserto">conserto</label>
 
-                <input type="radio" value="newBag" id="newBag" class="" data-value="0" name="agreement">
+                <input type="radio" value="substituição" id="newBag" class="" data-value="0" name="agreement">
                 <label class="" for="newBag">bagagem nova</label>
               </div>
             </div>
@@ -297,9 +298,9 @@
                 <div class="box-agreement">
                   <h5>possui rush emitida? </h5>
 
-                  <input type="radio" value="rushTrue" id="rushTrue" class="" data-value="0" name="agreement-rush">
+                  <input type="radio" value="Rush emitida" id="rushTrue" class="" data-value="0" name="agreement-rush">
                   <label class="" for="rushTrue">sim</label>
-                  <input type="radio" value="rushFalse" id="rushFalse" class="" data-value="0" name="agreement-rush">
+                  <input type="radio" value="Sem rush" id="rushFalse" class="" data-value="0" name="agreement-rush">
                   <label class="" for="rushFalse">não</label>
                 </div>
               </div>
@@ -381,7 +382,10 @@
       </div>
 
       <div class="container-textComents">
-        <textarea id="textComents" cols="30" rows="10" class="textComents"></textarea>
+        <div id="case-coments">
+          <ul id="caseList"></ul>
+        </div>
+        <!-- <textarea id="textComents" cols="30" rows="10" class="textComents"></textarea> -->
       </div>
     </div>
   </div>
@@ -392,5 +396,6 @@
 <script src="./js/getData.js"></script>
 <script src="./js/getDataBag.js"></script>
 <script src="./js/getUser.js"></script>
+<script src="./js/coments.js"></script>
 
 </html>

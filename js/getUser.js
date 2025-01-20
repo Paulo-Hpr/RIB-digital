@@ -24,7 +24,7 @@ btnTerm.addEventListener('click',printTerm)
 btnComents.addEventListener('click',generatorComents)
 
 function getAll() {
-   
+    // generalData = {}
     generalData = 
     {
         firstName:firstName.value,
@@ -47,17 +47,18 @@ function getAll() {
         faultyBags
     }
 
-    return sessionStorage.setItem("allData",JSON.stringify(generalData))
     
 }
 
 
 function printTerm() { 
     getAll()   
+    sessionStorage.setItem("allData",JSON.stringify(generalData))
     window.open("./termorecebimento.html");
     }
 
 function generatorComents() {
     getAll()   
-    window.open("./coments.html");
+    createList()
+    // window.open("./coments.html");
 }    
