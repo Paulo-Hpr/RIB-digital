@@ -71,3 +71,21 @@ td{
 .lineSignature{
     padding-top: 40px;
 }
+.case-ipt-numRib{
+    display: flex;
+    align-items: center;
+}
+.input_numRib{
+    height: 18px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.input_numRib:focus,
+.input_numRib:not(:placeholder-shown)
+{
+    border: none;
+    outline: none;
+}

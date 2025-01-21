@@ -18,8 +18,8 @@ let amountBag = document.getElementById("amountBag")
 amountBag.innerText = allData.faultyBags.length
 
 let date = document.getElementById("date")
-let dateFLy = new Date(allData.flghtRouter[0].data)
-const dia = String(dateFLy.getDate()).padStart(2, '0');
+let dateFLy =new Date(allData.flghtRouter[0].data)
+const dia = String(dateFLy.getDate() +1).padStart(2, '0');
 const mes = String(dateFLy.getMonth() + 1).padStart(2, '0'); // 
 const ano = dateFLy.getFullYear();
 date.innerText = `${dia}/${mes}/${ano}`;
