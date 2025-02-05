@@ -22,10 +22,10 @@ let btnComents = document.getElementById("btnComents")
 
 btnTerm.addEventListener('click',printTerm)
 btnComents.addEventListener('click',generatorComents)
-// iptCep.addEventListener('focusout',searchCep(iptCep.value))
+iptCep.addEventListener('focusout',searchCep)
+
 
 function getAll() {
-    // generalData = {}
     generalData = 
     {
         firstName:firstName.value,
@@ -64,27 +64,26 @@ function generatorComents() {
     // window.open("./coments.html");
 }    
 
-// function searchCep(cepNumber) {
-//     fetch(`https://brasilapi.com.br/api/cep/v1/${cepNumber}`, {
-//       method: "GET",
-//       headers: { "content-type": "application/json" },
-//     })
-//       .then((Response) => {
-//         if (Response.ok) {
-//           return Response.json();
-//         } else {
-//           throw new Error("Erro na requisição");
-//         }
-//       })
-//       .then((jsonbBodyceps) => {
-//         // numbercep.disabled = true;
-//         iptCity.value = jsonbBodyceps.city;
-//         iptStreet.value = jsonbBodyceps.street;
-//         iptState.value = jsonbBodyceps.state;
-//         iptDistrit.value = jsonbBodyceps.neighborhood;
-//       })
-//       .catch((error) => {
-//         // validationInputs(numbercep, false);
-//         console.error("error: ", error);
-//       });
-//   }
+function searchCep() {
+    let cepNumber = iptCep.value
+    fetch(`https://brasilapi.com.br/api/cep/v1/${cepNumber}`, {
+      method: "GET",
+      headers: { "content-type": "application/json" },
+    })
+      .then((Response) => {
+        if (Response.ok) {
+          return Response.json();
+        } else {
+          throw new Error("Erro na requisição");
+        }
+      })
+      .then((jsonbBodyceps) => {
+        iptCity.value = jsonbBodyceps.city;
+        iptStreet.value = jsonbBodyceps.street;
+        iptState.value = jsonbBodyceps.state;
+        iptDistrit.value = jsonbBodyceps.neighborhood;
+      })
+      .catch((error) => {
+        console.error("error: ", error);
+      });
+  }
