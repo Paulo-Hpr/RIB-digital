@@ -19,9 +19,11 @@ let iptdate = document.getElementById("ipt-date")
 
 let btnTerm = document.getElementById("btnTerm")
 let btnComents = document.getElementById("btnComents")
+let btnRib = document.getElementById("btnRib")
 
 btnTerm.addEventListener('click',printTerm)
 btnComents.addEventListener('click',generatorComents)
+btnRib.addEventListener('click',printRib)
 iptCep.addEventListener('focusout',searchCep)
 
 
@@ -56,6 +58,11 @@ function printTerm() {
     getAll()   
     sessionStorage.setItem("allData",JSON.stringify(generalData))
     window.open("./termorecebimento.html");
+    }
+function printRib() { 
+    getAll()   
+    sessionStorage.setItem("allData",JSON.stringify(generalData))
+    window.open("./ribdigital.html");
     }
 
 function generatorComents() {
