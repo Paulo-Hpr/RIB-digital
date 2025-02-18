@@ -1,8 +1,72 @@
 .case-RIB{
  width : 2480px;
  height: 3508px;   
+ border: 1px solid #000;
+ padding: 45px 40px ;
+ margin: 0px auto ;
+ width: 210mm;
+ min-height: 297mm;
 }
 .headear{
     width: 100%;
     
+}
+.head{
+    display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: 0px;
+
+}
+.headElements{
+    font-size: 12px;
+    width: 120px;
+    height: 60px;
+    border: 1px solid #000;
+    border-right: 0px;
+    text-align: center;
+}
+.categoryDivision{
+    background: #011458;
+    color: #fff;
+    text-align: center;
+}
+.categoryDivision p {
+    margin: 0px;
+    font-size: 12px;
+
+}
+.dta-client{
+display: grid;
+grid-template-columns: 80px 200px 100px 100px 180px 132px;
+font-size: 12px;
+    /* display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: 0px; */
+
+}
+
+.clientElements{
+    border: 1px solid #000;
+    height: 45px;
+    padding: 5px;
+}
+.clientCenter{
+    text-align: center;
+ 
+}
+.dataClients{
+    display: grid;
+    grid-template-columns: 80px 400px 312px;
+}
+.titleColumns{
+    display: grid;
+    grid-template-rows: 45px 2fr 2fr;
+}
+.titleItens{
+    border: 1px solid #000;
+font-size: 12px;
 }

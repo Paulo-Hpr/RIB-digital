@@ -3,6 +3,7 @@ let divCaseDataFly = document.querySelector('.case-data-flight')
 let listFlight = document.querySelector('.listFlight')
 let btnAddBag = document.querySelector('.btn-add-bag')
 let caseBtn = document.getElementById("case-btn")
+let iptFlight = document.getElementById("flight")
 let textError = document.getElementById("text-list-error")
 let destiny = document.querySelector(".destiny")
 let flghtRouter =[]
@@ -58,9 +59,9 @@ function addFlight(e) {
         if (tagName === 'origin') {
              el.value = destino
         }else{el.value = ""}
-        
+       
     })
-
+    iptFlight.focus()
     listFlightconstructor()
     
     textError.classList.remove("ipt-error")
