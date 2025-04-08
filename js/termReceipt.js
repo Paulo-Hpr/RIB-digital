@@ -5,7 +5,6 @@ let allData = JSON.parse(sessionStorage.getItem("allData"))
 
 let tagNumber = document.getElementById("tagNumber")
 allData.faultyBags.forEach(el =>{
-    console.log(el.bagTagNumber)
     tagNumber.innerText += " AD" + el.bagTagNumber + "/"
 })
 
@@ -31,5 +30,3 @@ reservation.innerText = allData.locator
 
 let nameClient = document.getElementById("nameClient")
 nameClient.innerText = allData.firstName + " " + allData.familyName
-
-window.print()
