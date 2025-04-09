@@ -12,7 +12,7 @@ function getSelectedProcessBag(){
     const selectedRadio = document.querySelector('input[name="btnProcess"]:checked');
    return selectedRadio.value
 }
-document.querySelector('input[ atrb="dprArea"]:checked')
+// document.querySelector('input[ atrb="dprArea"]:checked')
 
 btnAddBagProcess.addEventListener('click',addBag)
 
@@ -24,10 +24,10 @@ function addBag() {
         case 'DPR':
             bagAgreement = document.querySelector('input[name="agreement"]:checked').value;
             const selectedArea = document.querySelectorAll('input[atrb="dprArea"]:checked');
-            dprArea = Array.from(selectedArea).map(el => el.id)
+             dprArea = Array.from(selectedArea).map(el => el.id)
 
             const selectedLocal = document.querySelectorAll('input[atrb="dprLocal"]:checked');
-            dprLocal = Array.from(selectedLocal).map(el => el.name)
+             dprLocal = Array.from(selectedLocal).map(el => el.name)
 
             bagInfo = {
                 aerea: dprArea,
